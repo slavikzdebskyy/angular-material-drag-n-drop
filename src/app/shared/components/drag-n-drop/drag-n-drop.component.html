@@ -1,0 +1,25 @@
+<div class="container">
+  <h4 class="container-title">
+    Build Your Feedback Form
+  </h4>
+  <h5 class="container-subtitle">
+    Drag and drop components to create the Feedback Form for your Interviewers
+  </h5>
+  <div class="container-drag" cdkDropList (cdkDropListDropped)="dropped($event)">
+    <div class="container-drag-item" *ngFor="let ivent of ivents" cdkDrag>
+      <span>{{ ivent }}</span>
+    </div>
+<!--    <div class="container-drag-item" cdkDrag (cdkDragDropped)="dropped($event)">-->
+<!--      <span>Instructions</span>-->
+<!--    </div>-->
+<!--    <div class="container-drag-item" cdkDrag (cdkDragDropped)="dropped($event)">-->
+<!--      <span>Criteria</span>-->
+<!--    </div>-->
+<!--    <div class="container-drag-item" cdkDrag (cdkDragDropped)="dropped($event)">-->
+<!--      <span>Questions</span>-->
+<!--    </div>-->
+    <div class="container-drag-item draggible" cdkDrag cdkDragBoundary=".container-drag" (cdkDragMoved)="drop($event)" >
+      <p>Add Instructions to your Plan to provide guidance to your Interviewers</p>
+    </div>
+  </div>
+</div>

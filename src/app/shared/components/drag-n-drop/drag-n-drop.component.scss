@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  &-title {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  &-subtitle {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  &-drag {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+    &-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      font-size: 14px;
+      font-weight: 200;
+      min-width: 130px;
+      min-height: 70px;
+      border: solid 1px grey;
+      margin: 10px;
+      background-color: white;
+
+      &.draggible {
+        cursor: pointer;
+        max-width: 140px;
+        padding: 5px;
+
+        p {
+          margin: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
