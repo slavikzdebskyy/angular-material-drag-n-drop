@@ -28,22 +28,34 @@
       position: relative;
       font-size: 14px;
       font-weight: 200;
-      min-width: 130px;
+      width: 130px;
       min-height: 70px;
       border: solid 1px grey;
       margin: 10px;
       background-color: white;
 
-      &.draggible {
-        cursor: pointer;
-        max-width: 140px;
-        padding: 5px;
+      &-event {
+
+      }
+
+      &.draggable {
+        cursor: move;
+        text-align: center;
 
         p {
           margin: 0;
           text-align: center;
+
+          .cur-event {
+            color: blue;
+          }
         }
       }
     }
   }
 }
+
+
+
+
+
